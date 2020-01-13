@@ -62,16 +62,20 @@
 >	producer.AddTopics( topic_nameg);
 >
 >	const char* text = u8"阿萨德接电话爱仕达按实际活动即可拉伸活动空间来说都阿萨德好可怜爱仕达卢卡斯";
+
 >	int pos = 100000;
+
 >	while (pos-- > 0)
->	{		
+>	{
 >		std::string _text = text +  std::to_string(pos);
 >		producer.Produce(topic_nameg, _text);
 >	}
+
 >	while (true)
 >	{
 >		producer.Poll(500);
 >	}
+
 >}
 
 
