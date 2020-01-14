@@ -1,9 +1,9 @@
 
-##基于librdkafka封装
-#####可以指定分区生产和消费，可以指定offset消费
-使用例子
+## 基于librdkafka封装
+##### 可以指定分区生产和消费，可以指定offset消费
+## 使用例子
 
-###//消费回调	
+### //消费回调	
 >void consum_on_msg(void* pInvoker, const MessagePtr& pMsg)
 >{
 >	
@@ -40,7 +40,7 @@
 >}
 
 
-###//生产
+### //生产
 >void producer_on_msg(void* pInvoker, const MessagePtr& pMsg)
 >{	
 >	/*printf("date: %s\n", pMsg->data.c_str());
